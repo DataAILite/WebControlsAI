@@ -1,0 +1,32 @@
+﻿.draglist {
+  list-style-type: none;
+  cursor: default;
+  margin: 2px;
+  padding:2px;
+  user-select:none;
+  scrollbar-base-color:white;
+}
+.draglist:focus {
+/*outline:none;*/
+}
+li {
+/*font-family: Arial; 
+font-size: small;*/
+padding-bottom:2px;
+margin:0px;
+}
+
+li:focus {
+    background: #0066FF;
+    color: white;
+}
+.selected {
+    background: #0066FF ;
+    color: white;
+}
+.unselected {
+    background: white ;
+    color:black;
+}
+
+
