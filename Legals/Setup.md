@@ -15,18 +15,18 @@
 8. Set the BuildAction property for each of the above files to "Embedded Resource"
 9. Edit the AssemblyInfo.vb file:
 
---- After the <Assembly: AssemblyTradmark(...) line, add  <Assembly: TagPrefix("[Root Namespace]", "WC")>
---- After the <Assembly: AssemblyFileVersion(...) line add the following lines:
+- After the <Assembly: AssemblyTradmark(...) line, add  <Assembly: TagPrefix("[Root Namespace]", "WC")>
+- After the <Assembly: AssemblyFileVersion(...) line add the following lines:
 
-<Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.js", "text/javascript")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.css", "text/css")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.js", "text/javascript")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.css", "text/css")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].picError.Image.png", "image/png")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].picExclaim.Image.png", "image/png")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].picInfo.Image.png", "image/png")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].picQuestion.Image.gif", "image/gif")>
-<Assembly: System.Web.UI.WebResource("[Root Namespace].Stop.gif", "image/gif")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.js", "text/javascript")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.css", "text/css")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.js", "text/javascript")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.css", "text/css")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].picError.Image.png", "image/png")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].picExclaim.Image.png", "image/png")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].picInfo.Image.png", "image/png")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].picQuestion.Image.gif", "image/gif")>
+- <Assembly: System.Web.UI.WebResource("[Root Namespace].Stop.gif", "image/gif")>
 
 10. Build the solution. The [Assembly Name].dll file is created in the bin directory in the [configuration] folder. 
 11. Add a reference to this file in your web project to use these controls
