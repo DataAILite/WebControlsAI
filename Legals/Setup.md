@@ -14,10 +14,10 @@
 7. Add existing files for each of those folders from above extracted zip data
 8. Set the BuildAction property for each of the above files to "Embedded Resource"
 9. Edit the AssemblyInfo.vb file:
-
+---
 - After the <Assembly: AssemblyTradmark(...) line, add  <Assembly: TagPrefix("[Root Namespace]", "WC")>
 - After the <Assembly: AssemblyFileVersion(...) line add the following lines:
----
+----
 - <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.js", "text/javascript")>
 - <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.css", "text/css")>
 - <Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.js", "text/javascript")>
